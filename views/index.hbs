@@ -1,0 +1,319 @@
+{{!-- {{>navbar}} --}}
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Coders World | Blog</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+
+{{!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9e2213edf0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    {{>navbar data=details}}
+  </header>
+
+  <!-- Section 1 -->
+  <section class="bg-dark py-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Main Hero Post -->
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="hero-post shadow">
+            <img src="static/images/hero-bg.png" alt="hero img" class="img-fluid">
+            <div class="hero-post-badges text-center">
+              <a href="#" class="p-2 mb-2 "><i class="fa fa-calendar-o mr-2"></i> 7th november , 2022</a>
+              <a href="#" class="p-2">Technology</a>
+            </div>
+            <!-- Hero Content -->
+            <div class="hero-post-content">
+              <div class="row">
+
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                  <img
+                    src="https://media-exp1.licdn.com/dms/image/D4D03AQFdgvGY1qdVXg/profile-displayphoto-shrink_800_800/0/1662913665925?e=1669248000&v=beta&t=zVCpK_6uCVoiwGpT6bOJOk84K2uPJ-hdp-dfbF4aknI"
+                    alt="Author" class="img-fluid rounded-circle">
+                </div>
+
+                <div class="col-sm-10 col-md-10 col-lg-10">
+                  <h2>My Blog Post - 1st Blog</h2>
+                </div>
+
+              </div>
+            </div>
+            <!-- End -->
+
+          </div>
+        </div>
+        <!-- Main Hero Post End -->
+
+        <!-- Hero Post Aside -->
+        <div class="col-sm-12 col-md-12 col-lg-4">
+
+          <!-- Fist Post Aside -->
+          <div class="row mt-sm-4 mt-md-4 mt-lg-0 post-aside">
+            <div class="col-md-6 col-lg-12">
+              <div class="hero-post shadow mb-4">
+                <img src="static/images/backgrond-1.jpg" alt="hero img" class="img-fluid w-100">
+                <div class="hero-post-badges text-center">
+                  <a href="#" class="p-2 mb-2"><i class="fa fa-calendar-o mr-2"></i> 7th november , 2022</a>
+                  <a href="#" class="p-2">Technology</a>
+                </div>
+                <div class="hero-post-content">
+                  <div class="row">
+                    <div class="col-sm-2 col-md-3">
+                      <img
+                        src=https://media-exp1.licdn.com/dms/image/D4D03AQFdgvGY1qdVXg/profile-displayphoto-shrink_800_800/0/1662913665925?e=1669248000&v=beta&t=zVCpK_6uCVoiwGpT6bOJOk84K2uPJ-hdp-dfbF4aknIalt="Author"
+                        class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-sm-9">
+                      <h4>My Blog Post - 2nd Blog</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd Post Aside -->
+            <div class="col-md-6 col-lg-12">
+              <div class="hero-post shadow">
+                <img src="static/images/background-2.jpg" alt="hero img" class="img-fluid w-100">
+                <div class="hero-post-badges text-center">
+                  <a href="#" class="p-2 mb-2"><i class="fa fa-calendar-o mr-2"></i> 7th november , 2022</a>
+                  <a href="#" class="p-2">Technology</a>
+                </div>
+                <div class="hero-post-content">
+                  <div class="row">
+                    <div class="col-sm-2 col-md-3">
+                      <img
+                        src=https://media-exp1.licdn.com/dms/image/D4D03AQFdgvGY1qdVXg/profile-displayphoto-shrink_800_800/0/1662913665925?e=1669248000&v=beta&t=zVCpK_6uCVoiwGpT6bOJOk84K2uPJ-hdp-dfbF4aknI
+                        alt="Author" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-sm-9">
+                      <h4>My Blog Post - 3rd Blog</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- End Hero Aside -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Blog Section -->
+  <section>
+    {{>mainblog}}
+  </section>
+  {{!-- services section --}}
+  <footer class="services py-5">
+    <div class="container">
+
+        <h2 class="text-center">Services that we provide</h2>
+        <div class="row">
+          {{!-- first service col  --}}
+          <div class="col-md-4 mb-5">
+            <div class="card ">
+               <div class="card-body badges">
+                {{!-- <i class="fab fa-accusoft"></i> --}}
+                <h4 class=>
+             
+                  {{this.title}}
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at laboriosam perferendis mollitia porro, </p>
+                  <a href=""class="mr-2 py-1 px-2">Check</a>
+                  <a href=""class="mr-2 py-1 px-2">support</a>
+
+               </div>
+            </div>
+
+          </div>
+          {{!-- second  --}}
+           <div class="col-md-4">
+            <div class="card">
+               <div class="card-body badges">
+                {{!-- <i class="fab fa-accusoft"></i> --}}
+                <h4 class=>
+                  {{!-- default is white color  --}}
+                  Software devlopment
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at laboriosam perferendis mollitia porro, </p>
+                  <a href=""class="mr-2 py-1 px-2">Check</a>
+                  <a href=""class="mr-2 py-1 px-2">support</a>
+
+               </div>
+            </div>
+
+          </div>
+          {{!-- third 
+           --}}
+            <div class="col-md-4">
+            <div class="card">
+               <div class="card-body badges">
+                {{!-- <i class="fab fa-accusoft"></i> --}}
+                <h4 class=>
+                  {{!-- default is white color  --}}
+                  Support for Project
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at laboriosam perferendis mollitia porro, </p>
+                  <a href=""class="mr-2 py-1 px-2">Check</a>
+                  <a href=""class="mr-2 py-1 px-2">support</a>
+
+               </div>
+            </div>
+
+          </div>
+          {{!-- fourth 
+           --}}
+            <div class="col-md-4">
+            <div class="card">
+               <div class="card-body badges">
+                {{!-- <i class="fab fa-accusoft"></i> --}}
+                <h4 class=>
+                  {{!-- default is white color  --}}
+                  Support for Project
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at laboriosam perferendis mollitia porro, </p>
+                  <a href=""class="mr-2 py-1 px-2">Check</a>
+                  <a href=""class="mr-2 py-1 px-2">support</a>
+
+               </div>
+            </div>
+
+          </div>
+          {{!-- fifth  --}}
+           <div class="col-md-4">
+            <div class="card">
+               <div class="card-body badges">
+                {{!-- <i class="fab fa-accusoft"></i> --}}
+                <h4 class=>
+                  {{!-- default is white color  --}}
+                   Support for Project
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at laboriosam perferendis mollitia porro, </p>
+                  <a href=""class="mr-2 py-1 px-2">Check</a>
+                  <a href=""class="mr-2 py-1 px-2">support</a>
+
+               </div>
+            </div>
+
+          </div>
+
+          {{!-- sixth --}}
+           <div class="col-md-4">
+            <div class="card">
+               <div class="card-body badges">
+                {{!-- <i class="fab fa-accusoft"></i> --}}
+                <h4 class=>
+                  {{!-- default is white color  --}}
+                   Support for Project
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at laboriosam perferendis mollitia porro, </p>
+                  <a href=""class="mr-2 py-1 px-2">Check</a>
+                  <a href=""class="mr-2 py-1 px-2">support</a>
+
+               </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+  </footer>
+{{!-- contact us section  --}}
+<section class="py-5">
+  
+{{> contact}}
+
+</section>
+  <!-- Footer Section -->
+  <footer class="py-5">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <a href="#" class="footer-logo">About Us</a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor repellat debitis sint perferendis maiores
+            laborum voluptate molestiae fugiat reiciendis voluptatem!</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Useful links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Latest</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 news-letter mt-sm-4 mt-md-0">
+          <h4>News Letter</h4>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control border-0 rounded-0" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn-main btn btn-success my-sm-0 rounded-0" type="submit">Search</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="row copyright pt-4">
+        <div class="col-12">
+          <p class="text-center">Made With <i class="fa fa-heart" aria-hidden="true"></i> By Abhii &copy 2022</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  {{!-- {{>navbar data=details}} --}}
+  {{!-- {{details}} --}}
+  {{!-- services section --}}
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

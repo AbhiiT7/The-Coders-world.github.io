@@ -1,0 +1,26 @@
+<h2>Contact-us</h2>
+
+<form action="/process-contact-form" method="post" >
+    <div class="mb-3">
+        <label for="inputEmail4" class="form-label">Your Email Address</label>
+        <input name="email"type="email" class="form-control" id="inputEmail4">
+    </div>
+
+
+    <div class="mb-3">
+        <label for="inputPassword4" class="form-label">Your contact number</label>
+        <input name="phone" type="number" class="form-control" id="contactNumber">
+    </div>
+        {{!-- in input we use name to identify data in db --}}
+    <div class="form-floating my-2">
+        <textarea name="query"style="height: 250;" class="form-control" placeholder=" Enter your Query here"></textarea>
+        <label for="floatingTextarea">Your Query</label>
+    </div>
+
+    <div class="conatainer text-center">
+        <button type="submit" class="btn btn-primary">submit</button>
+
+    </div>
+
+
+</form>
